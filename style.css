@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;300&family=Source+Sans+Pro&family=Vazirmatn:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height:100vh;
+    background-color:#581845;
+}
+
+.wrapper{
+    background-color: #900c3f;
+    max-width: 600PX;
+    height:300px;
+    border-radius: 10px;
+    padding: 16px 25px;
+    transition: height 0.2s ease;
+}
+.wrapper.active{
+    height:530px;
+}
+
+header h1{
+font-size: 21px;
+font-weight: 500;
+color:  #e8fdef;
+}
+
+header p{
+    margin-top:5px;
+    color:#fdfdfd;
+    font-size:16px;
+}
+
+.wrapper .from{
+    margin:20px 0 25px;
+}
+
+.from :where(input,button){
+    width:100%;
+    height: 55px;
+    border:none;
+    outline:none;
+    border-radius:5px;
+}
+.from input{
+    font-size: 18px;
+    padding: pointer;
+    font-size: 17px;
+    background-color: #ebd1d1;
+
+}
+.from button{
+    cursor: pointer;
+    padding: pointer;
+    margin-top: 20px;
+    font-size: 17px;
+    background-color: #ebd1d1;
+
+}
+
+.wrapper .qr{
+    display: flex;
+    opacity: 0;
+    padding: 33px 0;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e8fdef;
+
+}
+.wrapper.active .qr{
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.05s ease;
+}
